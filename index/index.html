@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index/style.css">
+  <title>Форма авторизации</title>
+</head>
+<body>
+  <h2 >Login</h2>
+  <form class="form" action="submit" method="post">
+    <div class="emai">
+      <label for="email">Ваш Email:</label><br>
+      <input
+        type="email"
+        id="email"
+        name="your_email"
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        placeholder="ivan@yandex.ru"
+        required
+      >
+    </div>
+    <br>
+    <div class="pass">
+      <label for="password">Ваш пароль:</label><br>
+      <input
+        type="password"
+        id="password"
+        name="your_password"
+        placeholder="Пароль"
+        minlength="7"
+        pattern="(?=.*[a-zA-Z]).{8,}"
+        title="Минимум 8 символов, 
+        хотя бы одна латинская буква"
+        required
+      >
+    </div>
+    <div class="consent">
+      <input type="checkbox" 
+        name="your_kaptcha" 
+        id="kaptcha"
+        required
+       >
+
+      <label for="kaptcha">Даю согласие на обработку <br>персональных данных в соответствии с <a class="pk" href="/privacy/privacy.html">политикой обработки персональных данных</a></label>
+    </div>
+    <br>
+  <button type="submit">Войти</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    padding: 100px 20px 40px;
+    background-image: url("/foto/m.jpg"); /* Путь к вашей картинке */
+    background-size: cover; /* Масштабирует так, чтобы закрыть весь блок, возможно обрезание краёв */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет картинку */
+    min-height: 100vh; /* Заполняет всю высоту окна браузера (на весь экран) */
+    margin: 0; /* Убирает отступы */
+}
+.emai{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.pass{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+button{
+  display: flex;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  background:rgb(0, 0, 0);
+  border: 2px solid f0f0;
+  border-radius: 10px;
+  padding: 10px 60px;
+}
+button:hover{
+  background-color: rgb(137, 88, 88);
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px; /* Отступ снизу, чтобы линия не сливалась с текстом */
+  font-family: cursive; /*Задаёт шрифт текста */
+  color: aliceblue;
+}
+.consent{
+  color: white;
+  text-align: center;
+}
+.pk{
+  font-family: cursive;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Полная ширина */
+  height: 2px;
+  background-color: #000000;
+}
+.form{
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 90px;
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+  display:block;
+}
+input[type="email"]{
+  border: 0px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 5px;
+}
+input[type="email"]:focus{
+  outline: none;
+}
+input[type="password"]{
+  border: 0px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 5px;
+}
+input[type="password"]:focus{
+  outline: none;
+}
